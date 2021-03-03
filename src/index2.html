@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Circular Text Effect | Demo 2 | Codrops</title>
+	<meta name="description" content="An experimental circular SVG text animation" />
+	<meta name="keywords" content="animation, svg, text, typography, intro, javascript" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/kxo3pgz.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-2 loading">
+	<main>
+		<svg class="circles" width="100%" height="100%" viewBox="0 0 1400 1400">
+			<def>
+				<path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5" />
+				<path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5" />
+				<path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5" />
+				<path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5" />
+			</def>
+			<text class="circles__text circles__text--1">
+				<textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">And now this tree of ours may grow tall in the woods&nbsp;</textPath>
+			</text>
+			<text class="circles__text circles__text--2">
+				<textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="2001">Depth over distance every time&nbsp;</textPath>
+			</text>
+			<text class="circles__text circles__text--3">
+				<textPath class="circles__text-path" xlink:href="#circle-3" aria-label="" textLength="1341">But it's the roots that will bind us here&nbsp;</textPath>
+			</text>
+			<text class="circles__text circles__text--4">
+				<textPath class="circles__text-path" xlink:href="#circle-4" aria-label="" textLength="836">Depth over distance was all I asked of you&nbsp;</textPath>
+			</text>
+		</svg>
+		<div class="frame">
+			<h1 class="frame__title">Circular Text Effect</h1>
+			<nav class="frame__links">
+				<a href="http://tympanus.net/Tutorials/InfiniteCircularGallery/">Previous demo</a>
+				<a href="https://tympanus.net/codrops/?p=53487">Article</a>
+				<a href="https://github.com/codrops/CircularTextEffect/">GitHub</a>
+			</nav>
+			<nav class="frame__demos">
+				<a href="index.html" class="frame__demo">demo 1</a>
+				<a href="index2.html" class="frame__demo frame__demo--current">demo 2</a>
+				<a href="index3.html" class="frame__demo">demo 3</a>
+			</nav>
+		</div>
+		<div class="content">
+			<p>We are a creative agency that focuses on human-centric design and ergonomic workplace innovations.</p>
+		</div>
+		<button class="enter">
+			<div class="enter__bg"></div>
+			<span class="enter__text">Enter</span>
+		</button>
+	</main>
+	<script src="js/demo2/index.js"></script>
+</body>
+
+</html>
